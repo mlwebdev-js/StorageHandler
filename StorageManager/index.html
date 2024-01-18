@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Storage</title>
+</head>
+<body>
+
+    <div class="container">
+        <button type="button" 
+            class="slide_in">
+                Slide In
+        </button>
+    </div>
+    <p>&nbsp;</p>
+
+
+    <form id="myForm">
+        <input type="text" name="username" 
+            placeholder="Username" />
+
+        <input type="number" name="age" 
+            placeholder="Age" />
+
+        <input type="checkbox" name="subscribe" 
+            value="yes" /> Subscribe
+
+        <button type="submit">Submit</button>
+
+        <button id="edit">Edit</button>
+
+        <button id="show-storage">Show Storage</button>
+        <!-- Form elements go here -->
+    </form>
+    <div id="dataDisplay"></div>
+    <script src="js/StorageManager.js"></script>
+<script src="js/AppController.js"></script>
+
+</body>
+</html>

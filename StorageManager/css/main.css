@@ -1,0 +1,37 @@
+body {
+    background: #0F0C29;
+    background-image: -webkit-linear-gradient(to right, #24243E, #302863, #0F0C29);
+    background-image: linear-gradient(to right, #24243E, #302863, #0F0C29);
+}
+
+.container {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.slide_in {
+    font-size: 1.7em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: .5em 1.5em;
+    border: 0;
+    border-radius: .1em;
+    background-image:-webkit-radial-gradient(white, #eee );
+    background-image: radial-gradient(white, #eee);
+    animation: slideMe .7 ease-in;
+}
+
+@keyframes slideMe {
+    0%{
+        transform: skewX(53deg) translateX(-500px);
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    62%{
+        transform: skewX(0deg) translateX(30px);
+    }
+    100% {
+        transform: skew(0deg);
+    }
+    
+}
