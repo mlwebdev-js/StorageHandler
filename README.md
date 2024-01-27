@@ -1,3 +1,30 @@
+# Current StorageManager.js Overview
+
+## Overview
+This document provides an overview of the original `StorageManager.js` and its functionalities within an application, focusing on its design and application state management.
+
+## Design and Functionalities
+
+### Key Features
+- **CRUD Operations**: The `StorageManager.js` is primarily designed for handling CRUD (Create, Read, Update, Delete) operations on form data using the browser's localStorage.
+
+### Application State Management
+- The script manages the application state by storing, retrieving, updating, and deleting form data in the browser's localStorage. This allows for persistent data storage across browser sessions.
+
+### Methods Overview
+- **handleSubmit(event)**: Binds to a form's submit event, gathers form data, and stores it in localStorage.
+- **create(data)**: Stores new data in localStorage.
+- **read()**: Retrieves data from localStorage.
+- **update(newData)**: Updates existing data in localStorage with new data.
+- **delete()**: Removes data from localStorage.
+- **displayData(containerSelector)**: Displays stored data in a specified container.
+
+### Usage
+- The `StorageManager.js` is utilized in web applications requiring form data management without continuous server communication, enhancing offline capabilities and user experience.
+
+## Conclusion
+The original `StorageManager.js` plays a crucial role in form data management within web applications, leveraging localStorage for effective state management and data persistence.
+
 # StorageManager.js Enhancement Guide
 
 ## Overview
